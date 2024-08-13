@@ -1,0 +1,33 @@
+:root{
+    --backgroundPrimary:#FEF3E2;
+    --backgroundSecondary:#BEC6A0;
+    --primaryColor:#708871;
+    --secondaryColor:hsl(224, 10%, 22%);
+}
+
+@font-face {
+    font-family: centuryGothic;
+    src: url(centurygothic.ttf);
+  }
+
+body{
+    font-family: centuryGothic;
+    background-color: var(--backgroundPrimary);
+    color: var(--secondaryColor);
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.left{
+    
+}
