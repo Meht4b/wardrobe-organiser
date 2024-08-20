@@ -1,8 +1,8 @@
 :root{
-    --backgroundPrimary:#FEF3E2;
-    --backgroundSecondary:#BEC6A0;
-    --primaryColor:#708871;
-    --secondaryColor:hsl(224, 10%, 22%);
+    --backgroundPrimary:white;
+    --backgroundSecondary:white;
+    --primaryColor:grey;
+    --secondaryColor:black;
 }
 
 @font-face {
@@ -10,24 +10,67 @@
     src: url(centurygothic.ttf);
   }
 
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+html{
+    height: 100%;
+}
+
 body{
     font-family: centuryGothic;
     background-color: var(--backgroundPrimary);
     color: var(--secondaryColor);
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    height: 95%;
+    display: flex;
+    gap: 50px;
 }
 
-#navbar{
+#navBar{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+#navBarBottom{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#title{
+    text-align: center;
+}
+
+.right{
+    flex-grow: 1;
 }
 
 ul{
     list-style-type: none;
 }
 
-.left{
-    
+#clothesContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.cloth{
+    background-color: var(--primaryColor);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    gap: 10px;
+}
+
+.cloth img{
+    width: 100%;
 }
