@@ -10,6 +10,8 @@
     src: url(centurygothic.ttf);
   }
 
+
+
 h1{
     font-size: 40px;
 }
@@ -17,6 +19,7 @@ h1{
 h2{
     font-size: 30px;
 }
+
 
 html{
     height: 100%;
@@ -26,15 +29,31 @@ body{
     font-family: centuryGothic;
     background-color: var(--backgroundPrimary);
     color: var(--secondaryColor);
-    height: 95%;
     display: flex;
-    gap: 50px;
+    height: 95%;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
+
+
 
 #navBar{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: gray;
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+#navBar ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 50px;
 }
 
 #navBarBottom{
@@ -53,24 +72,43 @@ body{
 
 ul{
     list-style-type: none;
+    padding-left: 0px;
+}
+
+#wardrobeContainer{
+    height: 100%;
 }
 
 #clothesContainer{
-    display: flex;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     gap: 10px;
+    height: 90%;
+    background-color: blue;
+}
+
+#title{
+    max-height: 10%;
 }
 
 .cloth{
-    background-color: var(--primaryColor);
-    border-radius: 5px;
+    border-radius: 5px; 
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
-    gap: 10px;
+    height: 50vh;
+
+}
+
+.cloth h2{
+    margin: 0px;
+
 }
 
 .cloth img{
-    width: 100%;
+    
+    max-height: 50%;
 }
+
