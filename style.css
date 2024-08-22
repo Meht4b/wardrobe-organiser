@@ -76,7 +76,7 @@ ul{
 }
 
 #wardrobeContainer{
-    height: 100%;
+    min-height: 100%;
 }
 
 #clothesContainer{
@@ -84,8 +84,7 @@ ul{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
-    height: 90%;
-    background-color: blue;
+    height: 85%;
 }
 
 #title{
